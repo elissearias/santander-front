@@ -7,7 +7,7 @@ h2 {
 }
 
 body {
-    background-color: rgb(219, 183, 135);
+    background-color: rgba(219, 183, 135, 0.774);
     background-image: url(http://assets.stickpng.com/thumbs/5845e614fb0b0755fa99d7e8.png);    
 }
 
@@ -27,22 +27,11 @@ button {
 
 /* Barra de navegación */
 .header{
-    margin-top: 40px 20px 0 20px;
+    margin: 0 20px 0 20px;
     font-size: 0;
-    line-height: 45px;
     font-family: sans-serif;
-    height: 45px;
 }
 
-.menuitem{
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-li{
-    display: inline;
-}
-  
 .header > * {
     display: inline-block;
     font-size: 16px;
@@ -51,19 +40,38 @@ li{
     line-height: 45px;
 }
 
+header {
+    display: block;
+}
+
+li{
+    display: inline;
+}
+
 .logo {
     width: 15%;
 }
 
+.logo > img {
+    height: 100%;
+}
+
 .navbar {
     width: 70%;
-    text-align: left;
+    text-align: center;
     color: rgb(240, 71, 20);
+}
+
+.menuitem{
+    display: inline;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
 .actions {
     width: 15%;
-    text-align: left;
+    text-align: right;
     font-size: 14px;
     color: #67b54b;
 }
@@ -100,7 +108,7 @@ li{
   }
 
   .publish {
-    /* container styles if any */
+    margin-left: 20px;
   }
   
   .publish h3 {
@@ -125,3 +133,153 @@ li{
     color: #025157;
     margin-right: 18px;
   }
+
+  .section-matcha {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-matcha .color-article  {
+    flex: 2;
+    padding-right: 100px;
+  }
+
+  .color-article img{
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .color-article  h2 {
+    font-family: "Alegreya", Serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+
+  .color-article  p{
+      font-size: 18px;
+      line-height: 1.5;
+      color: #343434;
+      font-family: "Open Sans", sans-serif;
+  }
+
+  .color-article  button {
+      background-color: #025157;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      padding: 15px;
+  }
+
+  .section-color  button{
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .section-matcha .cards {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.section-matcha .cards .storie-carousel  {
+    position: relative;
+}
+
+  .storie-carousel img {
+    display: flex;
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .elements-card{
+      margin: 20px;
+  }
+  .elements-card h4 {
+    font-family: 'Slabo 27px', serif;
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  .elements-card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .card-icon {
+    display: flex;
+    align-items: center;
+    color: #352e2e;
+    margin-bottom: 20px;
+  }
+
+  .card-icon figure {
+      margin: 0;
+  }
+
+  .card-icon img {
+    width: 30px;
+    max-width: 350px;
+    padding-right: 10px;
+  }
+
+  .card-icon p {
+    font-size: 20px;
+    color: #a3a3a3;
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+  .button-card{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+  }
+  .button-card button {
+    display: block;
+    margin-left: 0%;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 12px 20px;
+    font-size: 19px;
+    color: #fff;
+    background-color: #025157;
+  }
+ 
+  .section-matcha .cards .everly{
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .everly img{
+    max-width: 70%;
+  }
+
+
+    
+  
